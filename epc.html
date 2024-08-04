@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Chandra Shekhar Kumar" />
+<meta name="generator" content="LaTeX Lwarp package" />
+<meta name="description" content="Elements of Programming Challenges : Basics (Volume I" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>Elements of Programming Challenges</title>
+<link rel="stylesheet" type="text/css" href="lwarp_sagebrush.css" />
+</head>
+<body>
+
+
+<div class="bodywithoutsidetoc">
+
+
+<main class="bodycontainer">
+
+
+<section class="textbody">
+<a id="epc-autofile-0"></a>
+<a id="epc-autopage-1"></a>
+<div class="center">
+<p>
+
+<a href="cover.svg" target="_blank" ><img
+    src="cover.svg"
+    style="
+    -ms-transform:scale(1.0,1.0);
+    -webkit-transform:scale(1.0,1.0);
+    transform:scale(1.0,1.0);
+    "
+    class="inlineimage"
+    alt="(image)"
+></a>
+</p>
+</div>
+<div class="center">
+<p>
+Elements
+</p>
+<p>
+of
+</p>
+<p>
+Programming Challenges
+</p>
+<p>
+Basics
+</p>
+<p>
+Volume 1
+</p>
+<p>
+By<br />
+Chandra Shekhar Kumar<br />
+Co-Founder, Ancient Science Publishers<br />
+Founder, Ancient Kriya Yoga Mission<br />
+Integrated M. Sc. in Physics, IIT Kanpur, India
+</p>
+<p>
+Ancient Science Publishers
+</p>
+</div>
+<p>
+<span style="width:2.84526pt; display:inline-block"><!----></span>
+</p>
+<p>
+<span style="width:2.84526pt; display:inline-block"><!----></span>
+</p>
+<!--
+...... chapter Challenges ......
+-->
+<h3 id="autosec-4">Challenges</h3>
+<a id="epc-autopage-4"></a>
+
+
+
+<nav class="toc">
+<p>
+<a href="epc.html#autosec-5" class="tocchapter" >
+<span class="sectionnumber">1</span>&#x2003;Two Sum</a>
+</p>
+
+
+<p>
+<a href="epc.html#autosec-22" class="tocsection" >
+<span class="sectionnumber">1.1</span>&#x2003;Brute Force</a>
+</p>
+
+
+<p>
+<a href="epc.html#autosec-32" class="tocsection" >
+<span class="sectionnumber">1.2</span>&#x2003;Sort and Binary Search</a>
+</p>
+
+
+<p>
+<a href="epc.html#autosec-59" class="tocsection" >
+<span class="sectionnumber">1.3</span>&#x2003;Sort and Traverse Inward</a>
+</p>
+</nav>
+<p>
+*
+</p>
+<p>
+<span style="width:2.84526pt; display:inline-block"><!----></span>
+</p>
+<!--
+...... chapter Two Sum ......
+-->
+<h3 id="autosec-5">Challenge&nbsp;<span class="sectionnumber">1&#x2003;</span>Two Sum</h3>
+<a id="epc-autopage-5"></a>
+<div class="amsthmbodyproblemstyle">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<a id="epc-autopage-6"></a>
+<span class="amsthmnameproblemstyle">&#x2711; Problem</span><span class="amsthmnumberproblemstyle"> <span class="textup">1-1</span></span>.   Given an array of <span
+      id="lateximage-epc-1"
+      class="lateximagesource"
+><!--
+n
+--><img
+    src="epc-images/954275B0C8B29F4CF40A512D587390AE.svg"
+    alt="\( n \)"
+    role="math"
+    style="width:0.58386em ; vertical-align:-0.03125em "
+    class="lateximage"
+></span> integers and a number <span
+    id="lateximage-epc-2"
+    class="lateximagesource"
+><!--
+k
+--><img
+    src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+    alt="\( k \)"
+    role="math"
+    style="height:1.07124em"
+    class="lateximage"
+></span>, determine whether there is a pair of elements in the array that sums to exactly <span
+    id="lateximage-epc-3"
+    class="lateximagesource"
+><!--
+k
+--><img
+   src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+   alt="\( k \)"
+   role="math"
+   style="height:1.07124em"
+   class="lateximage"
+></span>. <span class="theoremendmark">♢</span>
+</p>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmproof">
+<a id="epc-autopage-13"></a>
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="amsthmproofname"><em><b> &#x2712; <span class="underline">Solution</span></b></em>.</span> Let us assume that
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<span
+      id="lateximage-epc-4"
+      class="lateximagesource"
+><!--
++
+--><img
+      src="epc-images/A953E45D4D14306BE6641E3B32D41B14.svg"
+      alt="(Pisymbol)"
+      style=""
+      class="lateximage"
+></span> the same element cannot be used twice, i.e. the pair should consist of two different array elements.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span
+      id="lateximage-epc-5"
+      class="lateximagesource"
+><!--
++
+--><img
+      src="epc-images/A953E45D4D14306BE6641E3B32D41B14.svg"
+      alt="(Pisymbol)"
+      style=""
+      class="lateximage"
+></span> the elements can be positive, negative or zero.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span
+      id="lateximage-epc-6"
+      class="lateximagesource"
+><!--
++
+--><img
+      src="epc-images/A953E45D4D14306BE6641E3B32D41B14.svg"
+      alt="(Pisymbol)"
+      style=""
+      class="lateximage"
+></span> the array may contain duplicates.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span
+      id="lateximage-epc-7"
+      class="lateximagesource"
+><!--
++
+--><img
+    src="epc-images/A953E45D4D14306BE6641E3B32D41B14.svg"
+    alt="(Pisymbol)"
+    style=""
+    class="lateximage"
+></span> there is only one such pair if at all.
+</p>
+</li>
+</ul>
+
+</li>
+
+</ul>
+<!--
+...... section Brute Force ......
+-->
+<h4 id="autosec-22"><span class="sectionnumber">1.1&#x2003;</span>Brute Force</h4>
+<a id="epc-autopage-22"></a>
+
+
+<p>
+We can try all the pairs in the array and see if any of these add up to the number <span
+      id="lateximage-epc-8"
+      class="lateximagesource"
+><!--
+k
+--><img
+   src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+   alt="\( k \)"
+   role="math"
+   style="height:1.07124em"
+   class="lateximage"
+></span>.
+</p>
+<pre class="programlisting">
+bool hasPairSum(const std::vector&lt;int&gt; &amp; arr, int k)
+{
+    std::size_t len = arr.size();
+
+      for(int i = 0; i &lt; len; i++)
+      {
+          for(int j = i + 1; j &lt; len; j++)
+          {
+              if (arr[i] + arr[j] == k)
+                  return true;
+          }
+      }
+      return false;
+}
+</pre>
+
+<p>
+Since there are <span
+      id="lateximage-epc-9"
+      class="lateximagesource"
+><!--
+Θ(n2 )
+--><img
+    src="epc-images/75BF7C605E0AD5343FBA0A0ED75AF8E3.svg"
+    alt="\( \Theta (n^2) \)"
+    role="math"
+    style="width:3.11148em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> possible pairs, time complexity of this approach is <span
+    id="lateximage-epc-10"
+    class="lateximagesource"
+><!--
+O(n2 )
+--><img
+    src="epc-images/E83B83CB731E7AABA8A5549D8C8573AE.svg"
+    alt="\( \bigO (n^2) \)"
+    role="math"
+    style="width:3.1691em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span>. Space complexity is <span
+    id="lateximage-epc-11"
+    class="lateximagesource"
+><!--
+O(1)
+--><img
+   src="epc-images/C628B0A5ED3E0CB9986AE355DF0F844B.svg"
+   alt="\( \bigO (1) \)"
+   role="math"
+   style="width:2.41098em ; vertical-align:-0.3125em "
+   class="lateximage"
+></span>.
+</p>
+<!--
+...... section Sort and Binary Search ......
+-->
+<h4 id="autosec-32"><span class="sectionnumber">1.2&#x2003;</span>Sort and Binary Search</h4>
+<a id="epc-autopage-32"></a>
+
+
+<p>
+We can sort the array and search for the pair by traversing the array element-wise and look ahead for its complement using binary search.
+</p>
+<pre class="programlisting">
+bool hasPairSum(std::vector&lt;int&gt; &amp; arr, int k)
+{
+    std::sort(arr.begin(), arr.end());
+
+      std::size_t len = arr.size();
+
+      for(int i = 0; i &lt; len; i++)
+      {
+          if(std::binary_search(arr.begin() + i, arr.end(), k - arr[i]))
+          return true;
+      }
+      return false;
+}
+</pre>
+
+<p>
+Time complexity of <span
+      id="lateximage-epc-12"
+      class="lateximagesource"
+><!--
+n
+--><img
+    src="epc-images/954275B0C8B29F4CF40A512D587390AE.svg"
+    alt="\( n \)"
+    role="math"
+    style="width:0.58386em ; vertical-align:-0.03125em "
+    class="lateximage"
+></span> binary searches is <span
+    id="lateximage-epc-13"
+    class="lateximagesource"
+><!--
+O(n log n)
+--><img
+    src="epc-images/8BBF26F142CCFB7483F0ED3BB2BB3B0E.svg"
+    alt="\( \bigO (n\log n) \)"
+    role="math"
+    style="width:5.16957em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span>. Time complexity of sorting process depends on the sorting algorithm : <span
+    id="lateximage-epc-14"
+    class="lateximagesource"
+><!--
+O(n log n)
+--><img
+    src="epc-images/8BBF26F142CCFB7483F0ED3BB2BB3B0E.svg"
+    alt="\( \bigO (n\log n) \)"
+    role="math"
+    style="width:5.16957em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> in case of Merge Sort or Heap Sort. <span
+    id="lateximage-epc-15"
+    class="lateximagesource"
+><!--
+O(n2 )
+--><img
+      src="epc-images/E83B83CB731E7AABA8A5549D8C8573AE.svg"
+      alt="\( \bigO (n^2) \)"
+      role="math"
+      style="width:3.1691em ; vertical-align:-0.3125em "
+      class="lateximage"
+></span> in case of Quick Sort.
+</p>
+
+<p>
+Space complexity for <span
+      id="lateximage-epc-16"
+      class="lateximagesource"
+><!--
+n
+--><img
+    src="epc-images/954275B0C8B29F4CF40A512D587390AE.svg"
+    alt="\( n \)"
+    role="math"
+    style="width:0.58386em ; vertical-align:-0.03125em "
+    class="lateximage"
+></span> binary searches is <span
+    id="lateximage-epc-17"
+    class="lateximagesource"
+><!--
+O(n)
+--><img
+    src="epc-images/2C21537EDC71DB3B4FF4B00380E110BB.svg"
+    alt="\( \bigO (n) \)"
+    role="math"
+    style="width:2.58598em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span>. Space complexity is <span
+    id="lateximage-epc-18"
+    class="lateximagesource"
+><!--
+O(n)
+--><img
+    src="epc-images/2C21537EDC71DB3B4FF4B00380E110BB.svg"
+    alt="\( \bigO (n) \)"
+    role="math"
+    style="width:2.58598em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> for Merge Sort, <span
+    id="lateximage-epc-19"
+    class="lateximagesource"
+><!--
+O(1)
+--><img
+   src="epc-images/C628B0A5ED3E0CB9986AE355DF0F844B.svg"
+   alt="\( \bigO (1) \)"
+   role="math"
+   style="width:2.41098em ; vertical-align:-0.3125em "
+   class="lateximage"
+></span> for Heap Sort and <span
+   id="lateximage-epc-20"
+   class="lateximagesource"
+><!--
+O(log n)
+--><img
+    src="epc-images/9BBB85E46C21AB965220808BF8898718.svg"
+    alt="\( \bigO (\log n) \)"
+    role="math"
+    style="width:4.4075em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> for Quick Sort. Hence overall space complexity is <span
+    id="lateximage-epc-21"
+    class="lateximagesource"
+><!--
+O(n)
+--><img
+   src="epc-images/2C21537EDC71DB3B4FF4B00380E110BB.svg"
+   alt="\( \bigO (n) \)"
+   role="math"
+   style="width:2.58598em ; vertical-align:-0.3125em "
+   class="lateximage"
+></span>. <sup>1</sup><a id="epc-autopage-53"></a>
+</p>
+<div role="note" class="footnotes">
+
+<a id="epc-autopage-54"></a>
+
+<p>
+<sup>1</sup>&nbsp;<em>std::sort</em> uses <em>Introspective Sort</em> with time complexity as <span
+      id="lateximage-epc-22"
+      class="lateximagesource"
+><!--
+O(n log n)
+--><img
+    src="epc-images/8BBF26F142CCFB7483F0ED3BB2BB3B0E.svg"
+    alt="\( \bigO (n\log n) \)"
+    role="math"
+    style="width:5.16957em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> and space complexity as <span
+    id="lateximage-epc-23"
+    class="lateximagesource"
+><!--
+O(log n)
+--><img
+   src="epc-images/9BBB85E46C21AB965220808BF8898718.svg"
+   alt="\( \bigO (\log n) \)"
+   role="math"
+   style="width:4.4075em ; vertical-align:-0.3125em "
+   class="lateximage"
+></span>.
+</p>
+
+
+</div>
+<!--
+...... section Sort and Traverse Inward ......
+-->
+<h4 id="autosec-59"><span class="sectionnumber">1.3&#x2003;</span>Sort and Traverse Inward</h4>
+<a id="epc-autopage-59"></a>
+
+
+<p>
+After sorting the array, we can search for the pair-sum <span
+      id="lateximage-epc-24"
+      class="lateximagesource"
+><!--
+k
+--><img
+    src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+    alt="\( k \)"
+    role="math"
+    style="height:1.07124em"
+    class="lateximage"
+></span> by comparing with the sum of the elements at the extreme ends. If it exceeds <span
+    id="lateximage-epc-25"
+    class="lateximagesource"
+><!--
+k
+--><img
+    src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+    alt="\( k \)"
+    role="math"
+    style="height:1.07124em"
+    class="lateximage"
+></span>, then there is no point in looking ahead because all the entries ahead will yield higher sums only, hence we move backward by decrementing the right index. If it is less than <span
+    id="lateximage-epc-26"
+    class="lateximagesource"
+><!--
+k
+--><img
+    src="epc-images/C29C6FA1A6B5A8ACBDDB6CD1AD0AA1FF.svg"
+    alt="\( k \)"
+    role="math"
+    style="height:1.07124em"
+    class="lateximage"
+></span>, then any sum using the lower element will yield smaller sums only, hence we move forward by advancing the left index.
+</p>
+<pre class="programlisting">
+bool hasPairSum(std::vector&lt;int&gt; &amp; arr, int k)
+{
+    std::sort(arr.begin(), arr.end());
+
+      std::size_t low = 0, high = arr.size() - 1;
+
+      while (low &lt; high)
+      {
+          int sum = arr[low] + arr[high];
+
+         if(sum == k)
+             return true;
+         else if(sum &gt; k)
+             high--;
+         else // sum &lt; k
+             low++;
+      }
+      return false;
+}
+</pre>
+
+<p>
+Space-Time complexity of this algorithm is dominated by the sorting algorithm. Time complexity of the process of traversing inwards is <span
+      id="lateximage-epc-27"
+      class="lateximagesource"
+><!--
+O(n)
+--><img
+    src="epc-images/2C21537EDC71DB3B4FF4B00380E110BB.svg"
+    alt="\( \bigO (n) \)"
+    role="math"
+    style="width:2.58598em ; vertical-align:-0.3125em "
+    class="lateximage"
+></span> and space complexity is <span
+    id="lateximage-epc-28"
+    class="lateximagesource"
+><!--
+O(1)
+--><img
+   src="epc-images/C628B0A5ED3E0CB9986AE355DF0F844B.svg"
+   alt="\( \bigO (1) \)"
+   role="math"
+   style="width:2.41098em ; vertical-align:-0.3125em "
+   class="lateximage"
+></span>. <span class="theoremendmark">&#x220E;</span>
+</p>
+
+</div>
+<a id="epc-autofile-last"></a>
+</section>
+</main>
+</div>
+</body>
+</html>
